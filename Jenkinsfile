@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				changelog '.*some_text.*'
+				changelog '.*prod.*'
 			}
 		
             steps {                
