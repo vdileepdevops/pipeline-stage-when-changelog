@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				changelog '.*prod.*'
+				changeset glob: "*.js"
 			}
 		
             steps {                
